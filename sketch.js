@@ -5,6 +5,7 @@ var button1,button2;
 var gameState=0;
 var m1,m2,m3,m4,m5,m6,m7,stone_img;
 var steps,step;
+var j1,j2,j3,j4,j5,j6,good1,good2,good3,good4,good5,good6;
 var RbGroup,Arrow;
 var life;
 var live=3;
@@ -15,6 +16,10 @@ function preload()
   /*sound1=loadSound("click.mp3");
   sound2=loadSound("strike.mp3");
   sound3=loadSound("go.mp3");*/
+  j1=loadImage("job1.png");
+  j2=loadImage("job2.png");
+  j3=loadImage("job3.png");
+  j4=loadImage("job4.png");
 	bg=loadImage("bg2.jpg");
   m1=loadImage("monster1.png");
   m2=loadImage("monster2.png");
@@ -98,11 +103,57 @@ function draw() {
     fill("white");
     textSize(20);
    text("SCORE:"+count,95,35);
-    if(count===10)
+
+    if(count===500 || count>500)
     {
-      live++;
+      good1=createSprite(25,65);
+      good1.addImage(j1);
+      good1.scale=0.2;
+      
     }
-//console.log(count);
+
+    if(count===1000 || count>1000)
+    {
+      good2=createSprite(25,150);
+      good2.addImage(j2);
+      good2.scale=0.2;
+      RbGroup.velocityX=-22;
+    }
+
+    if(count===1500 || count>1500)
+    {
+      good3=createSprite(25,200);
+      good3.addImage(j3);
+      good3.scale=0.2;
+      
+    }
+
+    if(count===2000 || count>2000)
+    {
+      good4=createSprite(25,150);
+      good4.addImage(j4);
+      good4.scale=0.2;
+      
+    }
+
+    if(count===2500 || count>2500)
+    {
+      good5=createSprite(25,220);
+      good5.addImage(j5);
+      good5.scale=0.2;
+      
+    }
+
+    if(count===3100 || count>3100)
+    {
+      good6=createSprite(25,3220);
+      good6.addImage(j6);
+      good6.scale=0.2;
+      
+    }
+
+
+
 console.log(live);
     step.scale=0.00000001;
    step.x=25;
@@ -129,7 +180,7 @@ console.log(live);
          { 
           RbGroup.get(i).destroy();
           Arrow.destroyEach();
-          count=count+1;
+          count=count+100;
          
            }
           
@@ -146,7 +197,7 @@ console.log(live);
       {
       if(obstaclesGroup.get(j).isTouching(Arrow))
       {
-        count=count-1;
+        count=count-50;
         obstaclesGroup.get(j).destroy();
           Arrow.destroyEach();
       }
@@ -173,14 +224,14 @@ function spawnArrow()
 {
  arrows=createSprite(p1.x+5,p1.y-8);
  arrows.addImage(arrow);
- arrows.velocityX=11;
+ arrows.velocityX=20;
  arrows.scale=0.1;
  Arrow.add(arrows);
 }
 
 function monster()
 {
- if(frameCount%80 === 0)
+ if(frameCount%40 === 0)
  {
   var mon1=createSprite(windowWidth,random(0,windowHeight-200),100,100);
  
@@ -204,19 +255,19 @@ function monster()
   default:break;
  }
   mon1.scale=0.5;
-  mon1.velocityX=-5;
+  mon1.velocityX=-20;
   RbGroup.add(mon1);
-  //mon1.debug=true;
+  
 }
  }
  function obstacle()
  {
-  if(frameCount%60 === 0)
+  if(frameCount%65 === 0)
   {
    var stone=createSprite(random(windowWidth/4,windowWidth),0,200,100);
    stone.addImage(stone_img);
    stone.scale=0.3;
-   stone.velocityY=4;
+   stone.velocityY=10;
    obstaclesGroup.add(stone);
   }
 
