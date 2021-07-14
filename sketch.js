@@ -208,6 +208,14 @@ console.log(live);
     if(gameState===2)
     {
       background(bg);
+	    fill("white");
+    textSize(20);
+    text(":"+live,35,35);
+
+    fill("white");
+    textSize(20);
+   text("SCORE:"+count,95,35);
+
       fill("black");
      // sound3.play();
       var gm=createSprite(600,250)
