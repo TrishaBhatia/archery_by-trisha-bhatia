@@ -136,7 +136,7 @@ function draw() {
       
     }
 
-    if(count===2500 || count>2500)
+    /*if(count===2500 || count>2500)
     {
       good5=createSprite(25,320);
       good5.addImage(j5);
@@ -150,7 +150,7 @@ function draw() {
       good6.addImage(j6);
       good6.scale=0.2;
       
-    }
+    }*/
 
 
 
