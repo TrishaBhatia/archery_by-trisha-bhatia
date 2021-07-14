@@ -104,37 +104,6 @@ function draw() {
     textSize(20);
    text("SCORE:"+count,95,35);
 
-    if(count===500 || count>500)
-    {
-      good1=createSprite(25,65);
-      good1.addImage(j1);
-      good1.scale=0.2;
-      
-    }
-
-    if(count===1000 || count>1000)
-    {
-      good2=createSprite(25,150);
-      good2.addImage(j2);
-      good2.scale=0.2;
-      RbGroup.velocityX=-22;
-    }
-
-    if(count===1500 || count>1500)
-    {
-      good3=createSprite(25,200);
-      good3.addImage(j3);
-      good3.scale=0.2;
-      
-    }
-
-    if(count===2000 || count>2000)
-    {
-      good4=createSprite(25,250);
-      good4.addImage(j4);
-      good4.scale=0.2;
-      
-    }
 
     /*if(count===2500 || count>2500)
     {
@@ -185,6 +154,38 @@ console.log(live);
            }
           
      }
+	      if(count===500 || count>500)
+    {
+      good1=createSprite(25,65);
+      good1.addImage(j1);
+      good1.scale=0.2;
+      
+    }
+
+    if(count===1000 || count>1000)
+    {
+      good2=createSprite(25,150);
+      good2.addImage(j2);
+      good2.scale=0.2;
+      RbGroup.velocityX=-22;
+    }
+
+    if(count===1500 || count>1500)
+    {
+      good3=createSprite(25,200);
+      good3.addImage(j3);
+      good3.scale=0.2;
+      
+    }
+
+    if(count===2000 || count>2000)
+    {
+      good4=createSprite(25,250);
+      good4.addImage(j4);
+      good4.scale=0.2;
+      
+    }
+
      
      if(live===0)
      {
