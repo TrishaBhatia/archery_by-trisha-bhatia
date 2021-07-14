@@ -130,7 +130,7 @@ function draw() {
 
     if(count===2000 || count>2000)
     {
-      good4=createSprite(25,150);
+      good4=createSprite(25,250);
       good4.addImage(j4);
       good4.scale=0.2;
       
@@ -138,7 +138,7 @@ function draw() {
 
     if(count===2500 || count>2500)
     {
-      good5=createSprite(25,220);
+      good5=createSprite(25,320);
       good5.addImage(j5);
       good5.scale=0.2;
       
@@ -146,7 +146,7 @@ function draw() {
 
     if(count===3100 || count>3100)
     {
-      good6=createSprite(25,3220);
+      good6=createSprite(25,400);
       good6.addImage(j6);
       good6.scale=0.2;
       
