@@ -167,7 +167,7 @@ console.log(live);
       good2=createSprite(25,150);
       good2.addImage(j2);
       good2.scale=0.2;
-      RbGroup.velocityX=-22;
+      
     }
 
     if(count===1500 || count>1500)
@@ -175,6 +175,7 @@ console.log(live);
       good3=createSprite(25,200);
       good3.addImage(j3);
       good3.scale=0.2;
+	    RbGroup.velocityX=RbGroup.velocityX+-22;
       
     }
 
