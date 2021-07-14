@@ -175,7 +175,7 @@ console.log(live);
       good3=createSprite(25,200);
       good3.addImage(j3);
       good3.scale=0.2;
-	    RbGroup.velocityX=RbGroup.velocityX+-22;
+	    RbGroup.velocityX=RbGroup.velocityX+-5;
       
     }
 
