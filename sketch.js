@@ -149,7 +149,7 @@ console.log(live);
          { 
           RbGroup.get(i).destroy();
           Arrow.destroyEach();
-          count=count+100;
+         // count=count+100;
          
            }
           
