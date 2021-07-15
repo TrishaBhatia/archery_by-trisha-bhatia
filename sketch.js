@@ -176,10 +176,10 @@ console.log(live);
          RbGroup.get(i).destroy();
         }
         
-      if (RbGroup.get(i).isTouching(Arrow))
+      if (Arrow.get(i).isTouching(RbGroup))
          { 
-          RbGroup.get(i).destroy();
-          Arrow.destroyEach();
+          RbGroup.destroy();
+          Arrow.get(i).destroyEach();
           count=count+100;
          
            }
