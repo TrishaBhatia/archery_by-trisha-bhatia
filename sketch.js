@@ -255,7 +255,7 @@ function monster()
   default:break;
  }
   mon1.scale=0.5;
-  mon1.velocityX=-20;
+  mon1.velocityX=-24;
   RbGroup.add(mon1);
   
 }
