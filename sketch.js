@@ -104,10 +104,41 @@ function draw() {
     textSize(20);
    text("SCORE:"+count,95,35);
 
-
-    /*if(count===2500 || count>2500)
+    if(count===500 || count>500)
     {
-      good5=createSprite(25,320);
+      good1=createSprite(25,65);
+      good1.addImage(j1);
+      good1.scale=0.2;
+      
+    }
+
+    if(count===1000 || count>1000)
+    {
+      good2=createSprite(25,150);
+      good2.addImage(j2);
+      good2.scale=0.2;
+      RbGroup.velocityX=-22;
+    }
+
+    if(count===1500 || count>1500)
+    {
+      good3=createSprite(25,200);
+      good3.addImage(j3);
+      good3.scale=0.2;
+      
+    }
+
+    if(count===2000 || count>2000)
+    {
+      good4=createSprite(25,150);
+      good4.addImage(j4);
+      good4.scale=0.2;
+      
+    }
+
+    if(count===2500 || count>2500)
+    {
+      good5=createSprite(25,220);
       good5.addImage(j5);
       good5.scale=0.2;
       
@@ -115,11 +146,11 @@ function draw() {
 
     if(count===3100 || count>3100)
     {
-      good6=createSprite(25,400);
+      good6=createSprite(25,3220);
       good6.addImage(j6);
       good6.scale=0.2;
       
-    }*/
+    }
 
 
 
@@ -149,44 +180,11 @@ console.log(live);
          { 
           RbGroup.get(i).destroy();
           Arrow.destroyEach();
-         // count=count+100;
+          count=count+100;
          
            }
           
      }
-	      if(count===500 || count>500)
-    {
-      good1=createSprite(25,65);
-      good1.addImage(j1);
-      good1.scale=0.2;
-      
-    }
-
-    if(count===1000 || count>1000)
-    {
-      good2=createSprite(25,150);
-      good2.addImage(j2);
-      good2.scale=0.2;
-      
-    }
-
-    if(count===1500 || count>1500)
-    {
-      good3=createSprite(25,200);
-      good3.addImage(j3);
-      good3.scale=0.2;
-	    RbGroup.velocityX=RbGroup.velocityX+-5;
-      
-    }
-
-    if(count===2000 || count>2000)
-    {
-      good4=createSprite(25,250);
-      good4.addImage(j4);
-      good4.scale=0.2;
-      
-    }
-
      
      if(live===0)
      {
@@ -209,14 +207,6 @@ console.log(live);
     if(gameState===2)
     {
       background(bg);
-	    fill("white");
-    textSize(20);
-    text(":"+live,35,35);
-
-    fill("white");
-    textSize(20);
-   text("SCORE:"+count,95,35);
-
       fill("black");
      // sound3.play();
       var gm=createSprite(600,250)
