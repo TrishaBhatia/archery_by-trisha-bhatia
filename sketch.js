@@ -274,7 +274,7 @@ function monster()
    var stone=createSprite(random(windowWidth/4,windowWidth),0,200,100);
    stone.addImage(stone_img);
    stone.scale=0.3;
-   stone.velocityY=14;
+   stone.velocityY=15;
    obstaclesGroup.add(stone);
   }
 
