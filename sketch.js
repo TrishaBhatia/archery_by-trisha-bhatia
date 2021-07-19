@@ -262,7 +262,7 @@ function monster()
   default:break;
  }
   mon1.scale=0.5;
-  mon1.velocityX=-20;
+  mon1.velocityX=-25;
   RbGroup.add(mon1);
   
 }
@@ -274,7 +274,7 @@ function monster()
    var stone=createSprite(random(windowWidth/4,windowWidth),0,200,100);
    stone.addImage(stone_img);
    stone.scale=0.3;
-   stone.velocityY=10;
+   stone.velocityY=14;
    obstaclesGroup.add(stone);
   }
 
