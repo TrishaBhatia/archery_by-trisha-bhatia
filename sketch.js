@@ -176,10 +176,10 @@ console.log(live);
          RbGroup.get(i).destroy();
         }
         
-      if (Arrow.get(i).isTouching(RbGroup.get(i)))
+      if (RbGroup.get(i).isTouching(Arrow))
          { 
           RbGroup.get(i).destroy();
-          Arrow.get(i).destroyEach();
+          Arrow.destroyEach();
           count=count+100;
          
            }
@@ -255,7 +255,7 @@ function monster()
   default:break;
  }
   mon1.scale=0.5;
-  mon1.velocityX=-24;
+  mon1.velocityX=-20;
   RbGroup.add(mon1);
   
 }
