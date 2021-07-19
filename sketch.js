@@ -212,13 +212,6 @@ console.log(live);
       var gm=createSprite(600,250)
     gm.addImage(over_img);
       gm.scale=1;
-	     fill("white");
-    textSize(20);
-    text(":"+live,35,35);
-
-    fill("white");
-    textSize(20);
-   text("SCORE:"+count,95,35);
     }
     
 
@@ -262,7 +255,7 @@ function monster()
   default:break;
  }
   mon1.scale=0.5;
-  mon1.velocityX=-25;
+  mon1.velocityX=-20;
   RbGroup.add(mon1);
   
 }
@@ -274,7 +267,7 @@ function monster()
    var stone=createSprite(random(windowWidth/4,windowWidth),0,200,100);
    stone.addImage(stone_img);
    stone.scale=0.3;
-   stone.velocityY=15;
+   stone.velocityY=10;
    obstaclesGroup.add(stone);
   }
 
