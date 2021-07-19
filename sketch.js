@@ -176,7 +176,7 @@ console.log(live);
          RbGroup.get(i).destroy();
         }
         
-      if (RbGroup.get(i).isTouching(Arrow))
+      if (Arrow.isTouching(RbGroup.get(i)))
          { 
           RbGroup.get(i).destroy();
           Arrow.destroyEach();
