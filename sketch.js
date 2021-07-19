@@ -212,6 +212,13 @@ console.log(live);
       var gm=createSprite(600,250)
     gm.addImage(over_img);
       gm.scale=1;
+	     fill("white");
+    textSize(20);
+    text(":"+live,35,35);
+
+    fill("white");
+    textSize(20);
+   text("SCORE:"+count,95,35);
     }
     
 
